@@ -1,6 +1,7 @@
 import streamlit as st
 import openpyxl
 
+
 # Initialize Excel workbook
 wb = openpyxl.Workbook()
 worksheet = wb.active
@@ -32,7 +33,7 @@ submitted = st.button(label="Submit")
 if submitted:
     # Process user input and store it in Excel
     worksheet.append([student_name, branch, email, selected_university, selected_college])
-    wb.save(r"c:\Users\mesaz\OneDrive\Desktop\STUDENT PORTAL.xlsx")
+    wb.save(r"c:\Users\mesaz\OneDrive\Desktop\student.xlsx")
 
 
     # Display success message
